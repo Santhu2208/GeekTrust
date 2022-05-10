@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+
+    </head>
+
+<h1>Demo Project </h1>
+<div>
+<div>
+  <label for="Type">Email Type:</label>
+  <select name="Email Type" id="ET">
+    <option value="Global">Global</option>
+    <option value="Broadcast">Broadcast</option>
+    <option value="RTE">RTE</option>
+    <option value="Mailchimp">Mailchimp</option>
+  </select>
+  <br><br>
+  <div>
+    <label for="Market">Market:</label>
+    <select onclick="getOption()" id="select" name="Market">
+      <option value="India">India</option>
+      <option value="UK">UK</option>
+      <option value="US">US</option>
+      <option value="Australia">Australia</option>
+    </select>
+    <br><br>
+  </div>
+</div>
+</div>
+
+<input onclick="myFunction();myFunction1();" type="submit" value="Proceed to Checklist "> 
+
+<div id ="checklist" style="visibility:hidden">
+<h1> Checklist  </h1>
+<h4>Global Checklist </h4>
+<div id="questions"></div> 
+<div id="results"></div>
+</div>
+
+<div id="checklist1" style="visibility:hidden">
+<h4 id="heading"> Market Checklist </h4>
+<div id="questions1"></div> 
+<div id="results1"></div>
+<button id="submit">Submit</button>
+</div>
+
+<script src="myscripts.js"></script>
+
+</body>
+</html>
